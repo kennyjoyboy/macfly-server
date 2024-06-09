@@ -50,6 +50,7 @@ def download_latest_release(download_path='.'):
 		pathto = os.path.join(download_path, version)
 		with open(pathto, 'wb') as archivo:
 		
+	
 			archivo.write(requests.get(url).content)
 		return version
 flnm=download_latest_release()
